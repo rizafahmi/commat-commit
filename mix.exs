@@ -38,6 +38,7 @@ defmodule RemindToContribute.Mixfile do
      {:phoenix_live_reload, "~> 1.0", only: :dev},
      {:gettext, "~> 0.11"},
      {:tentacat, "~> 0.5"},
+     {:mix_test_watch, "~> 0.2", only: :dev},
      {:cowboy, "~> 1.0"}]
   end
 
