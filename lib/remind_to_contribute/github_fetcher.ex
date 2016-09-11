@@ -7,7 +7,7 @@ defmodule RemindToContribute.GitHubFetcher do
   end
 
   defp process_data(event_list) do
-    []
+    event_list
   end
 
 end
