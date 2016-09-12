@@ -1,11 +1,11 @@
-defmodule RemindToContribute.Gettext do
+defmodule CommatCommit.Gettext do
   @moduledoc """
   A module providing Internationalization with a gettext-based API.
 
   By using [Gettext](https://hexdocs.pm/gettext),
   your module gains a set of macros for translations, for example:
 
-      import RemindToContribute.Gettext
+      import CommatCommit.Gettext
 
       # Simple translation
       gettext "Here is the string to translate"
@@ -20,5 +20,5 @@ defmodule RemindToContribute.Gettext do
 
   See the [Gettext Docs](https://hexdocs.pm/gettext) for detailed usage.
   """
-  use Gettext, otp_app: :remind_to_contribute
+  use Gettext, otp_app: :commat_commit
 end

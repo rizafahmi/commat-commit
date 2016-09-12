@@ -1,3 +1,3 @@
-defmodule RemindToContribute.PageView do
-  use RemindToContribute.Web, :view
+defmodule CommatCommit.PageView do
+  use CommatCommit.Web, :view
 end

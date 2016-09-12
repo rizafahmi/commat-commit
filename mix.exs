@@ -1,8 +1,8 @@
-defmodule RemindToContribute.Mixfile do
+defmodule CommatCommit.Mixfile do
   use Mix.Project
 
   def project do
-    [app: :remind_to_contribute,
+    [app: :commat_commit,
      version: "0.0.1",
      elixir: "~> 1.2",
      elixirc_paths: elixirc_paths(Mix.env),
@@ -17,7 +17,7 @@ defmodule RemindToContribute.Mixfile do
   #
   # Type `mix help compile.app` for more information.
   def application do
-    [mod: {RemindToContribute, []},
+    [mod: {CommatCommit, []},
      applications: [:phoenix, :phoenix_pubsub, :phoenix_html, :cowboy, :logger, :gettext,
                     :phoenix_ecto, :postgrex, :tentacat]]
   end

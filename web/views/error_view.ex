@@ -1,5 +1,5 @@
-defmodule RemindToContribute.ErrorView do
-  use RemindToContribute.Web, :view
+defmodule CommatCommit.ErrorView do
+  use CommatCommit.Web, :view
 
   def render("404.html", _assigns) do
     "Page not found"

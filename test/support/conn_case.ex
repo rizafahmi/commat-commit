@@ -1,4 +1,4 @@
-defmodule RemindToContribute.ConnCase do
+defmodule CommatCommit.ConnCase do
   @moduledoc """
   This module defines the test case to be used by
   tests that require setting up a connection.
@@ -20,23 +20,23 @@ defmodule RemindToContribute.ConnCase do
       # Import conveniences for testing with connections
       use Phoenix.ConnTest
 
-      alias RemindToContribute.Repo
+      alias CommatCommit.Repo
       import Ecto
       import Ecto.Changeset
       import Ecto.Query
 
-      import RemindToContribute.Router.Helpers
+      import CommatCommit.Router.Helpers
 
       # The default endpoint for testing
-      @endpoint RemindToContribute.Endpoint
+      @endpoint CommatCommit.Endpoint
     end
   end
 
   setup tags do
-    :ok = Ecto.Adapters.SQL.Sandbox.checkout(RemindToContribute.Repo)
+    :ok = Ecto.Adapters.SQL.Sandbox.checkout(CommatCommit.Repo)
 
     unless tags[:async] do
-      Ecto.Adapters.SQL.Sandbox.mode(RemindToContribute.Repo, {:shared, self()})
+      Ecto.Adapters.SQL.Sandbox.mode(CommatCommit.Repo, {:shared, self()})
     end
 
     {:ok, conn: Phoenix.ConnTest.build_conn()}

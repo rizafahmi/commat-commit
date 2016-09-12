@@ -1,12 +1,12 @@
-defmodule RemindToContribute.Web do
+defmodule CommatCommit.Web do
   @moduledoc """
   A module that keeps using definitions for controllers,
   views and so on.
 
   This can be used in your application as:
 
-      use RemindToContribute.Web, :controller
-      use RemindToContribute.Web, :view
+      use CommatCommit.Web, :controller
+      use CommatCommit.Web, :view
 
   The definitions below will be executed for every view,
   controller, etc, so keep them short and clean, focused
@@ -30,12 +30,12 @@ defmodule RemindToContribute.Web do
     quote do
       use Phoenix.Controller
 
-      alias RemindToContribute.Repo
+      alias CommatCommit.Repo
       import Ecto
       import Ecto.Query
 
-      import RemindToContribute.Router.Helpers
-      import RemindToContribute.Gettext
+      import CommatCommit.Router.Helpers
+      import CommatCommit.Gettext
     end
   end
 
@@ -49,9 +49,9 @@ defmodule RemindToContribute.Web do
       # Use all HTML functionality (forms, tags, etc)
       use Phoenix.HTML
 
-      import RemindToContribute.Router.Helpers
-      import RemindToContribute.ErrorHelpers
-      import RemindToContribute.Gettext
+      import CommatCommit.Router.Helpers
+      import CommatCommit.ErrorHelpers
+      import CommatCommit.Gettext
     end
   end
 
@@ -65,10 +65,10 @@ defmodule RemindToContribute.Web do
     quote do
       use Phoenix.Channel
 
-      alias RemindToContribute.Repo
+      alias CommatCommit.Repo
       import Ecto
       import Ecto.Query
-      import RemindToContribute.Gettext
+      import CommatCommit.Gettext
     end
   end
 

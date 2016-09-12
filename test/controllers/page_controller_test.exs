@@ -1,5 +1,5 @@
-defmodule RemindToContribute.PageControllerTest do
-  use RemindToContribute.ConnCase
+defmodule CommatCommit.PageControllerTest do
+  use CommatCommit.ConnCase
 
   test "GET /", %{conn: conn} do
     conn = get conn, "/"

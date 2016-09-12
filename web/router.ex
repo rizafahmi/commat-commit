@@ -1,5 +1,5 @@
-defmodule RemindToContribute.Router do
-  use RemindToContribute.Web, :router
+defmodule CommatCommit.Router do
+  use CommatCommit.Web, :router
 
   pipeline :browser do
     plug :accepts, ["html"]
@@ -13,14 +13,14 @@ defmodule RemindToContribute.Router do
     plug :accepts, ["json"]
   end
 
-  scope "/", RemindToContribute do
+  scope "/", CommatCommit do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
   end
 
   # Other scopes may use custom stacks.
-  # scope "/api", RemindToContribute do
+  # scope "/api", CommatCommit do
   #   pipe_through :api
   # end
 end

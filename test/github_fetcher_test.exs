@@ -1,8 +1,8 @@
-defmodule RemindToContribute.GitHubFetcherTest do
-  use RemindToContribute.ConnCase
+defmodule CommatCommit.GitHubFetcherTest do
+  use CommatCommit.ConnCase
   use ExUnit.Case
 
-  alias RemindToContribute.GitHubFetcher, as: GitHubFetcher
+  alias CommatCommit.GitHubFetcher, as: GitHubFetcher
 
   test "Get GitHub data" do
     actual = GitHubFetcher.get_data

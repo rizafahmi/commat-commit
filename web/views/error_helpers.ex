@@ -1,4 +1,4 @@
-defmodule RemindToContribute.ErrorHelpers do
+defmodule CommatCommit.ErrorHelpers do
   @moduledoc """
   Conveniences for translating and building error messages.
   """
@@ -32,9 +32,9 @@ defmodule RemindToContribute.ErrorHelpers do
     #     dgettext "errors", "is invalid"
     #
     if count = opts[:count] do
-      Gettext.dngettext(RemindToContribute.Gettext, "errors", msg, msg, count, opts)
+      Gettext.dngettext(CommatCommit.Gettext, "errors", msg, msg, count, opts)
     else
-      Gettext.dgettext(RemindToContribute.Gettext, "errors", msg, opts)
+      Gettext.dgettext(CommatCommit.Gettext, "errors", msg, opts)
     end
   end
 end

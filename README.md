@@ -1,4 +1,4 @@
-# RemindToContribute
+# CommatCommit
 
 To start your Phoenix app:
 

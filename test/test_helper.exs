@@ -1,4 +1,4 @@
 ExUnit.start
 
-Ecto.Adapters.SQL.Sandbox.mode(RemindToContribute.Repo, :manual)
+Ecto.Adapters.SQL.Sandbox.mode(CommatCommit.Repo, :manual)
 

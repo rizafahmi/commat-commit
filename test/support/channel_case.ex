@@ -1,4 +1,4 @@
-defmodule RemindToContribute.ChannelCase do
+defmodule CommatCommit.ChannelCase do
   @moduledoc """
   This module defines the test case to be used by
   channel tests.
@@ -20,22 +20,22 @@ defmodule RemindToContribute.ChannelCase do
       # Import conveniences for testing with channels
       use Phoenix.ChannelTest
 
-      alias RemindToContribute.Repo
+      alias CommatCommit.Repo
       import Ecto
       import Ecto.Changeset
       import Ecto.Query
 
 
       # The default endpoint for testing
-      @endpoint RemindToContribute.Endpoint
+      @endpoint CommatCommit.Endpoint
     end
   end
 
   setup tags do
-    :ok = Ecto.Adapters.SQL.Sandbox.checkout(RemindToContribute.Repo)
+    :ok = Ecto.Adapters.SQL.Sandbox.checkout(CommatCommit.Repo)
 
     unless tags[:async] do
-      Ecto.Adapters.SQL.Sandbox.mode(RemindToContribute.Repo, {:shared, self()})
+      Ecto.Adapters.SQL.Sandbox.mode(CommatCommit.Repo, {:shared, self()})
     end
 
     :ok

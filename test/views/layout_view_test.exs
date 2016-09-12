@@ -1,3 +1,3 @@
-defmodule RemindToContribute.LayoutViewTest do
-  use RemindToContribute.ConnCase, async: true
+defmodule CommatCommit.LayoutViewTest do
+  use CommatCommit.ConnCase, async: true
 end
